@@ -76,7 +76,7 @@ public class BombCtl : MonoBehaviour
     private void OnDestroy()
     {
         
-        soundmgr.explotion_sound(); //테질때 사운드
+        soundmgr.explotion_sound(); //터질때 사운드
         chek_bom = false;
         Mapclass bom_pos = enemymap.worldposition(transform.position);        
         Destroy(Instantiate(exp, new Vector3(bom_pos.worldPos.x, 2.5f, bom_pos.worldPos.z), Quaternion.identity), bomdesTime);
